@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Example of reduce().</h1>
+</body>
+<script>
+    //Eg.1-
+    var arr = [2, 3, 1, 5];
+    var a = arr.reduce(function (accumulator, currentValue) {
+        return accumulator + currentValue;
+    }, 0);
+    document.write("The sum of the array elements is: " + a);
+
+    //Eg.2-
+    var a1 = [30, 15, 5];
+    document.write("The difference of the array elements is: ");
+    document.write(a1.reduce(reducer_func));
+    function reducer_func(net1, n1) {
+        return net1 - n1;
+    }
+    //Eg.3-
+    var net2 = [3, 2, 5, 1, 7];
+    var calc2 = net2.reduce(
+        (accumulator, currentValue) => accumulator + currentValue, 0);
+    document.write("The total of the array elements comes out to be: " + calc2);
+
+    //Eg.4-
+    var net3 = [3]; //Array with one element.  
+    var calc3 = net3.reduce(
+        (accumulator, currentValue) => accumulator + currentValue);
+    document.write("The total of the array element comes out to be: " + calc3);  
+</script>
+
+</html>

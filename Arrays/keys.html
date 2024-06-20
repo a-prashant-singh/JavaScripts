@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Example of keys().</h1>
+</body>
+<script>
+
+
+let arr=['Mon','Tue','Wed','Thu','Sat'];   
+let itr=arr.keys();  
+document.write(itr+"<br>");  
+//Looping through each key.  
+for (let key of itr) {  
+  document.write(key+"<br>");  
+}  
+
+    // Example object
+const car = {
+  make: 'Toyota',
+  model: 'Camry',
+  year: 2020
+};
+
+// Using Object.keys() to get an array of keys
+const keys = Object.keys(car);
+
+console.log(keys); // Output: ["make", "model", "year"]
+
+
+</script>
+</html>
