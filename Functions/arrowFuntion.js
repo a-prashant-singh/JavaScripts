@@ -1,15 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Example of Arrow funtion</h1>
 
-</body>
-<script>
 //var add = function(x, y) {
 //    return x + y;
 //  };
@@ -42,7 +31,7 @@ new mul1(2,3);
 //Regular functions created using function declarations or expressions are constructible and
 //callable. Since regular functions are constructible, they can be called using the new keyword
 let mul = (x, y) => console.log(x * y);
-new mul(2,3);
+mul(2,3);
 //However, the arrow functions are only callable and not constructible, i.e arrow functions can 
 //never be used as constructor functions. Hence, they can never be invoked with the new keyword.
 
@@ -56,5 +45,6 @@ function sub1(x, x){}
 // SyntaxError: duplicate formal argument x
 
 
-</script>
-</html>
+//arrow function cannot be instantiate with new keyword
+//this binding does't work in arrow function
+//hoisting is not only posible in arrow function
