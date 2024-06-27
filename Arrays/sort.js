@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <script>
+
         // Example array of numbers
 const numbers = [5, 3, 8, 1, 2];
 
@@ -23,6 +15,4 @@ fruits.sort();
 
 console.log(fruits); // Output: ["Apple", "Banana", "Mango", "Orange"]
 
-    </script>
-</body>
-</html>
+ 

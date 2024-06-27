@@ -1,16 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
-<body>
-    <h1>Example of lastindexof().</h1>
-</body>
-<script>
     //Eg.1-
     var arr = ["C", "C++", "Python", "C++", "Java"];
     var result = arr.lastIndexOf("C++");
@@ -24,6 +12,3 @@
     var arr2 = ["C", "C++", "Python", "C++", "Java"];
     var result2 = arr2.lastIndexOf("JavaScript");
     document.writeln(result2);  
-</script>
-
-</html>

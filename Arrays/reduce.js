@@ -1,16 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
-<body>
-    <h1>Example of reduce().</h1>
-</body>
-<script>
     //Eg.1-
     var arr = [2, 3, 1, 5];
     var a = arr.reduce(function (accumulator, currentValue) {
@@ -36,6 +24,3 @@
     var calc3 = net3.reduce(
         (accumulator, currentValue) => accumulator + currentValue);
     document.write("The total of the array element comes out to be: " + calc3);  
-</script>
-
-</html>

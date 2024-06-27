@@ -1,16 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
-<body>
-    <h1>Example of fill().</h1>
-</body>
-<script>
 
     //Eg.1-
     let arr = [1, 2, 3, 4, 5];
@@ -52,6 +39,3 @@
     arr5.fill(2, 2, 4);
     arr5.fill(3, 4);
     console.log(arr5); // Output: [1, 1, 2, 2, 3]
-</script>
-
-</html>

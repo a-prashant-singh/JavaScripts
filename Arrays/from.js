@@ -1,16 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
-<body>
-    <h1>Example of from().</h1>
-</body>
-<script>
     //Eg.1-
     // Convert a string to an array
     const str = "hello";
@@ -62,7 +50,3 @@
     const arr6 = Array.from({ length: 5 }, () => 0);
     console.log(arr6); // Output: [0, 0, 0, 0, 0]
 
-
-</script>
-
-</html>

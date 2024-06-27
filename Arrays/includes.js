@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Example of includes().</h1>
-</body>
-<script>
+
     // Example array of numbers
 const numbers = [1, 2, 3, 4, 5];
 
@@ -19,5 +9,3 @@ const hasTen = numbers.includes(10);
 console.log(hasThree); // Output: true
 console.log(hasTen);   // Output: false
 
-</script>
-</html>

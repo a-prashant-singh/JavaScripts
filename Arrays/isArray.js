@@ -1,16 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>
-        Example of isArray().
-    </h1>
-</body>
-<script>
+
     // Example arrays
 const array1 = [1, 2, 3];
 const array2 = 'Hello';
@@ -21,5 +9,3 @@ console.log(Array.isArray(array1)); // Output: true
 console.log(Array.isArray(array2)); // Output: false
 console.log(Array.isArray(array3)); // Output: false
 
-</script>
-</html>

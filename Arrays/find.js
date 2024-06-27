@@ -1,16 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>
-        Example of find().
-    </h1>
-</body>
-<script>
+
     // Example array of objects
 const students = [
   { id: 1, name: 'Alice', age: 20 },
@@ -24,5 +12,3 @@ const olderStudent = students.find(student => student.age >= 22);
 
 console.log(olderStudent); // Output: { id: 2, name: 'Bob', age: 22 }
 
-</script>
-</html>

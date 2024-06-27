@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Example of indexof().</h1>
-</body>
-<script>
+
     // Example array of numbers
 const numbers = [1, 2, 3, 4, 5];
 
@@ -19,5 +9,3 @@ const indexTen = numbers.indexOf(10);
 console.log(indexThree); // Output: 2 (index of value 3)
 console.log(indexTen);   // Output: -1 (value 10 is not found in the array)
 
-</script>
-</html>

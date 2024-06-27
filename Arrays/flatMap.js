@@ -1,16 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
-<body>
-    <h1>Example of flatMap().</h1>
-</body>
-<script>
     //Eg.1-
     const arr = [1, 2, 3, 4];
     // Use flatMap to map and flatten the array
@@ -63,7 +51,3 @@
     }, multiplier);
     console.log(result2);
     // Output: [1, 10, 2, 20, 3, 30, 4, 40]
-
-</script>
-
-</html>

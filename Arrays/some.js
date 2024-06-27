@@ -1,18 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
-<body>
-    <h1>
-        Example of some().
-    </h1>
-</body>
-<script>
     //Eg.1-
     var arr = [12, 81, 23, 34];
     function test(arr) {
@@ -42,6 +28,3 @@
     var check = (element) => element % 2 === 0;
     document.write("Yes found. So, it should be ");
     document.write(arr3.some(check));  
-</script>
-
-</html>

@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Starting Arrays</h1>
-</body>
-<script>
+
 var x=Array.of(1,2,3,4,5);
 console.log(x);
 //By 1) JavaScript array literal
@@ -38,5 +28,3 @@ console.log("Merged Array : "+mergedArray);
 //copywithin()
 var copyarry=arr.copyWithin(0,2,3);
 console.log(copyarry);
-</script>
-</html>
