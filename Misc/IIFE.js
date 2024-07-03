@@ -2,8 +2,8 @@
 (function fun()
 {
     console.log("IIFE 1");
+    console.log("DB Connection");
 })();
-
 +function()
 {
     console.log("IIFE using + Operator");
