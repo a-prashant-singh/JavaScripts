@@ -58,6 +58,7 @@ for (let [index, value] of sparseIterator) {
   console.log(`Index: ${index}, Value: ${value}`);
 }
 
+
 // Output:
 // Index: 0, Value: 1
 // Index: 1, Value: undefined
