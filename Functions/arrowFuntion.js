@@ -43,8 +43,16 @@ function sub(x, x){}
 'use strict';
 function sub1(x, x){}
 // SyntaxError: duplicate formal argument x
+                                                                                                                                 
+//this binding does't work in arrow function
 
+//hoisting is not  posible in arrow function
+
+//Arrow functions do not have their own arguments object. 
+//They inherit arguments from the surrounding non-arrow function
 
 //arrow function cannot be instantiate with new keyword
-//this binding does't work in arrow function
-//hoisting is not only posible in arrow function
+//Cannot be used as constructors and will throw an error if used with new.
+
+//The super keyword is not available in arrow functions.
+
