@@ -5,7 +5,11 @@ const [num1, num2] = [1, 2];
 console.log(num1, num2); // Output: 1 2
 
 // Object destructuring
-const { name, age } = { name: 'Bob', age: 30 };
+const { name, age } = { 
+                         name: 'Bob', 
+                         age: 30 
+                      };
+                      
 console.log(name, age); // Output: Bob 30
 
 var arr=[1,2,3,4];
