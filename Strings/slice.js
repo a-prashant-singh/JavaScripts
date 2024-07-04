@@ -1,16 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>
-        Example of slice().
-    </h1>
-</body>
-<script>
+
     // Example string
 const str = 'Hello, World!';
 
@@ -26,6 +14,3 @@ const str1 = 'Hello, World!';
 const sliced1 = str1.slice(-6);
 
 console.log(sliced1); // Output: 'World!'
-
-</script>
-</html>

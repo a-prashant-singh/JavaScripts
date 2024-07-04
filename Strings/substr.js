@@ -1,16 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>
-        Example of substr().
-    </h1>
-</body>
-<script>// Example1 string
+// Example1 string
     const str = 'Hello, World!';
     
     // Using substr() to extract 'World'
@@ -28,6 +16,3 @@ const substring1 = str1.substr(7);
 console.log(substring1); // Output: 'World!'
 
     
-
-</script>
-</html>

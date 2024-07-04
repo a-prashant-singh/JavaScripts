@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Example of Strings.</h1>   
-</body>
-<script>
+
     //1) By string literal
     var stringName="string value";
     var str="parshya";
@@ -19,5 +9,3 @@
     var str1=new String("hello javascript string");  
     console.log(str1);
 
-</script>
-</html>

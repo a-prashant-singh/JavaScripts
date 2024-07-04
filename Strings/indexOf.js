@@ -1,16 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>
-        Example of indexOf().
-    </h1>
-</body>
-<script>
+
     // Example string
 const str = 'Hello, World!';
 
@@ -34,5 +22,3 @@ const indexOAfter5 = str.indexOf('o', 5);
 
 console.log(indexOAfter5); // Output: 8
 
-</script>
-</html>

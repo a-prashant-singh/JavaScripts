@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Example of split().</h1>
-</body>
-<script>
+
     // Example string
 const str = 'apple,banana,orange';
 
@@ -25,5 +15,3 @@ const fruitsArray1 = str1.split(/[,;]/);
 
 console.log(fruitsArray1); // Output: ['apple', 'banana', 'orange']
 
-</script>
-</html>
