@@ -10,12 +10,7 @@
     const arr1 = Array.from(set);
     console.log(arr1); // Output: ["apple", "banana", "cherry"]
 
-    //Eg.3-
-    // Suppose you have some <div> elements in your HTML
-    const divs = document.querySelectorAll('div');
-    // Convert NodeList to an array
-    const arr2 = Array.from(divs);
-    console.log(arr2); // Output: Array of <div> elements
+    
 
     //Eg.4-
     // Convert a string to an array of character codes

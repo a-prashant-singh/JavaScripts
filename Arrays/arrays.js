@@ -15,7 +15,7 @@ console.log(arr1);
 //By 3) JavaScript array constructor (new keyword)
 
 var emp=new Array("Jai","Vijay","Smith");  
-for (i=0;i<emp.length;i++){  
+for (let i=0;i<emp.length;i++){  
 console.log(emp[i]);  
 }  
 

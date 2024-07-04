@@ -13,7 +13,7 @@
         return arr1 == 'Sheero';
     } //It matches if any element in the array is equal to Sheero.  
     var chk = arr1.some(ismatching);
-    document.write("Yes, " + chk + ". One match found.");
+    console.log("Yes, " + chk + ". One match found.");
 
     //Eg.3-
     var arr2 = [2, 3, 4, 6, 9]; //Defining array elements  
@@ -21,10 +21,10 @@
         return arr2 % 2 == 0;
     } //This function checks if any element is even or not.  
     var test = arr2.some(check);
-    document.write("Yes, " + test);
+    console.log("Yes, " + test);
 
     //Eg.4-
     var arr3 = [2, 3, 4, 6, 9]; //Defining array elements  
     var check = (element) => element % 2 === 0;
-    document.write("Yes found. So, it should be ");
-    document.write(arr3.some(check));  
+    console.log("Yes found. So, it should be ");
+    console.log(arr3.some(check));  

@@ -2,10 +2,10 @@
 
 let arr=['Mon','Tue','Wed','Thu','Sat'];   
 let itr=arr.keys();  
-document.write(itr+"<br>");  
+console.log(itr);  
 //Looping through each key.  
 for (let key of itr) {  
-  document.write(key+"<br>");  
+  console.log(key);  
 }  
 
     // Example object
