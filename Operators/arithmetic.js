@@ -1,16 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Arithmetic Operators</h1>
-    <h1>Arithmetic Operators</h1>
-</body>
 
-<script>
 
 var num1=10;
 var num2=22;
@@ -28,6 +16,3 @@ console.log("Post Increment is : "+(++num1));
 console.log(num1);
 console.log("post Decrement is : "+(--num2));
 console.log(num2);
-</script>
-
-</html>

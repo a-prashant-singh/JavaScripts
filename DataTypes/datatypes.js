@@ -1,15 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
 
-<script>
 //These all are Primitive datatypes
 var  num=10; //holding number
 console.log(num);
@@ -24,6 +13,3 @@ console.log(isfalse);
 console.log("DataType of a is "+typeof isfalse);
 
 // Non-Primitive datatype is Object, Arrays and RegExp
-</script>
-
-</html>
