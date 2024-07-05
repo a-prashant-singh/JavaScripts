@@ -12,7 +12,7 @@
  let me = { 
  name: "Ashutosh Verma", 
   thisInArrow:() => { 
-  console.log("My name is " + this.name); // no 'this' binding here 
+  // console.log("My name is " + this.name); // no 'this' binding here 
   }, 
   thisInRegular(){ 
   console.log("My name is " + this.name); // 'this' binding works here 
@@ -37,11 +37,11 @@ mul(2,3);
 
 //It means that the following is valid JavaScript:
 
-function sub(x, x){}
+// function sub(x, x){}
 //It is not, however, when using strict mode:
 
-'use strict';
-function sub1(x, x){}
+// 'use strict';
+// function sub1(x, x){}
 // SyntaxError: duplicate formal argument x
                                                                                                                                  
 //this binding does't work in arrow function

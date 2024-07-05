@@ -1,6 +1,7 @@
 
 
-    var num1=10; num2=5;
+    let num1=10; 
+    let num2=5;
     var name1="parshya"; name2="parshya";
     console.log("== is equal to operator: "+(num1==num2));
     console.log("=== Identical (equal and of same type): "+(name1===name2));

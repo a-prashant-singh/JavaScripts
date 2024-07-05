@@ -20,11 +20,11 @@
     function check(arr2) {
         return arr2 % 2 == 0;
     } //This function checks if any element is even or not.  
-    var test = arr2.some(check);
-    console.log("Yes, " + test);
+    var test1 = arr2.some(check);
+    console.log("Yes, " + test1);
 
     //Eg.4-
     var arr3 = [2, 3, 4, 6, 9]; //Defining array elements  
-    var check = (element) => element % 2 === 0;
+    var check1 = (element) => element % 2 === 0;
     console.log("Yes found. So, it should be ");
-    console.log(arr3.some(check));  
+    console.log(arr3.some(check1));  
