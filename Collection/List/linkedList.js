@@ -1,102 +1,134 @@
-class DoublyLinkedList {
-    constructor() {
-        this.head = null;
-        this.tail = null;
-        this.size = 0;
+class LinkedList{
+    constructor(data)
+    {
+        this.head={
+            value:data,
+            next:null
+        },
+        this.tail=this.head,
+        this.length=1
     }
 
-    // Add a node to the end of the list
-    add(value) {
-        const newNode = new DoublyNode(value);
-        if (!this.head) {
-            this.head = newNode;
-            this.tail = newNode;
-        } else {
-            this.tail.next = newNode;
-            newNode.prev = this.tail;
-            this.tail = newNode;
+    append(data)
+    {
+        let newNode={
+            value:data,
+            next:null
         }
-        this.size++;
+        this.tail.next=newNode,
+        this.tail=newNode,
+        this.length++
     }
-
-    // Remove a node from the list
-    remove(value) {
-        if (!this.head) return;
-
-        if (this.head.value === value) {
-            this.head = this.head.next;
-            if (this.head) this.head.prev = null;
-            else this.tail = null;
-        } else {
-            let current = this.head;
-            while (current && current.value !== value) {
-                current = current.next;
+    prepend(data)
+    {
+        let newNode={
+            value:data,
+            next:this.head
+        }
+        this.head=newNode
+        this.length++
+    }
+    getPosition(data)
+    {
+        let index=0;
+        let nodeValue=this.head.value;
+        let nodeNext=this.head.next;
+        for(let i=0;i<1;i++)
+        {
+            if(nodeValue!=data)
+            {
+                nodeValue=nodeNext.value
+                nodeNext=nodeNext.next
+                // console.log(`${nodeValue} ${nodeNext}`)
+                index++
             }
-            if (current) {
-                if (current.next) {
-                    current.next.prev = current.prev;
-                } else {
-                    this.tail = current.prev;
-                }
-                if (current.prev) {
-                    current.prev.next = current.next;
-                }
+            else
+            {
+                return index
             }
+                     
         }
-        this.size--;
+        return index
     }
 
-    // Check if the list contains a value
-    contains(value) {
-        let current = this.head;
-        while (current) {
-            if (current.value === value) {
-                return true;
-            }
-            current = current.next;
+    traverse(req)
+    {
+         let counter=0;
+        let currentNode=this.head
+        while(counter<req)
+        {
+            counter++
+            currentNode=currentNode.next
         }
-        return false;
+        return currentNode
+    }
+    insertAt(index,data)
+    {
+           const newNode={
+            value:data,
+            next:null
+           }
+        let leaderNode=this.traverse(index-1)
+        const nextNode=leaderNode.next
+        leaderNode.next=newNode
+        newNode.next=nextNode
+           this.length++
+    }
+    remove(index)
+    {
+     
+        if(index>0)
+        {
+            let leaderNode=this.traverse(index-1)
+
+        const unwantedNode=leaderNode.next
+        const newNode=unwantedNode.next
+        leaderNode.next=newNode
+        if(index+1==this.length)
+        {
+            this.tail=this.traverse(index-1)
+        }
+        }
+        
+        else{
+            const newNode=this.traverse(index+1)
+            this.head=newNode
+        }
+        this.length--
+    }
+    reverse()
+    {
+      let first=this.head
+      this.tail=this.head
+      let second=first.next
+      console.log(second)
+      while(second)
+      {
+     let temp=second.next
+     console.log(temp)
+        second.next=first
+        console.log(second.next)
+
+        first=second
+        console.log(first)
+
+        second=temp
+        console.log(second)
+
+
+      }
+      this.head.next=null
+      this.head=first
     }
 
-    // Get the size of the list
-    getSize() {
-        return this.size;
-    }
-
-    // Print the list from head to tail
-    printForward() {
-        let current = this.head;
-        let result = '';
-        while (current) {
-            result += current.value + ' -> ';
-            current = current.next;
-        }
-        console.log(result + 'null');
-    }
-
-    // Print the list from tail to head
-    printBackward() {
-        let current = this.tail;
-        let result = '';
-        while (current) {
-            result += current.value + ' -> ';
-            current = current.prev;
-        }
-        console.log(result + 'null');
-    }
 }
 
-// Usage
-const dList = new DoublyLinkedList();
-dList.add(1);
-dList.add(2);
-dList.add(3);
-dList.printForward();  // Output: 1 -> 2 -> 3 -> null
-dList.printBackward(); // Output: 3 -> 2 -> 1 -> null
+let list=new LinkedList(10);
 
-console.log(dList.contains(2)); // Output: true
-dList.remove(2);
-dList.printForward();  // Output: 1 -> 3 -> null
+list.append(16);
+list.append(19);
+list.prepend(12);
+list.remove(3)
+console.log(list)
 
-console.log(dList.contains(2)); // Output: false
-console.log('Size:', dList.getSize()); // Output: Size: 2
+    
