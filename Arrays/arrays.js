@@ -24,7 +24,9 @@ console.log(emp[i]);
 //concat()
 var mergedArray=arr.concat(arr1);
 console.log("Merged Array : "+mergedArray);
+//Merged Array : parshya,amit,shiv,vidu,MP,UP,HP
 
 //copywithin()
 var copyarry=arr.copyWithin(0,2,3);
 console.log(copyarry);
+//[ 'shiv', 'amit', 'shiv', 'vidu' ]
